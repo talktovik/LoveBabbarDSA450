@@ -14,7 +14,8 @@ struct Pair
 struct pair function(int arr[], int n)
 {
 	//where clearly the size of the array is n and we have referance so //that we can do pointer Airthmatic Sort of
-  
+  	struct Pair minmax;
+	int i = 0;
 
 	//Single Element handeling.
 	if(n == 1)
@@ -47,7 +48,7 @@ int main()
 {
 	int arr = {90,121,2123,12321,9,12121,2242};
 	int arrsize = sizeif(arr)/sizeof(int);
-	struct pair minmax = function(arr,arrsize);
+	struct Pair minmax = function(arr,arrsize);
 	std::cout<<minmax.max <<std::endl;
 	std::cout<<minmax.min<< std::endl;
 	return 0;
